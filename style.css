@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100;
+    background-image: url(eduford_img/ooooooo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{
+    width: 90%;
+    color: #122faf;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #122faf;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #e4190a;
+    background: #e4190a;
+    transition: 1s;
+}
+h1{
+    color: #e4190a;
+    font-weight: 700;
+    margin-top: 125px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 23px;
+}
+h1 span{
+    color: deepskyblue;
+}
+.process-wrapper{
+    margin: auto;
+    max-width: 1080px;
+}
+#progress-bar-container{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 59px;
+}
+#progress-bar-container ul{
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+}
+#progress-bar-container li:before{
+    content: "";
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px #e4190a;
+    transition: all ease 0.3s;
+}
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover:before{
+    background: deepskyblue;
+}
+#progress-bar-container li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #e4190a;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all ease 0.2s;
+    vertical-align: bottom;
+    height: 59px;
+    position: relative;
+}
+#progress-bar-container li.step-inner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+#progress-bar-container li.active,
+#progress-bar-container li:hover{
+    color: deepskyblue;
+}
+#progress-bar-container li:after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #777;
+    margin: auto;
+    border: solid 7px #e4190a;
+    border-radius: 50%;
+    margin-top: 40px;
+    box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.2s;
+}
+#progress-bar-container li:hover:after{
+    background: deepskyblue;
+}
+#progress-bar-container li.active:after{
+    background: deepskyblue;
+}
+#progress-bar-container #line{
+    width: 80%;
+    margin: auto;
+    background: #122faf;
+    height: 5px;
+    position: absolute;
+    left: 10%;
+    top: 57px;
+    z-index: 1;
+    border-radius: 50px;
+    transition: all ease 0.9s;
+}
+#progress-bar-container #line-process{
+    content: "";
+    width: 3%;
+    height: 100%;
+    background: #122faf;
+    background: linear-gradient(to right,#122faf 0%,#2ea3b7 100%);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    transition: all ease 0.9s;
+}
+#progress-content-section{
+    width: 90%;
+    margin: auto;
+    background: #122faf;
+    border-radius: 4px;
+}
+#progress-content-section .section-content{
+    padding: 30px 40px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #122faf;
+    z-index: 1000;
+}
+
+nav .navbar {
+    max-width: 8000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .hamburger {
+    display: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav .nav-links {
+    height: 100%;
+    line-height: 70px;
+}
+
+nav .nav-links .links {
+    display: flex;
+}
+
+nav .nav-links .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 15px;
+}
+
+nav .nav-links .links li a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav .nav-links .links li .arrow {
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: #fff;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #122faf;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar .nav-links .links .sub-menu .More-arrow {
+    line-height: 40px;
+}
+
+.navbar .nav-links .links li:hover .sub-menu {
+    display: block;
+}
+
+.navbar .nav-links .links .more .more-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+}
+
+.navbar .nav-links .links .more:hover .more-sub-menu {
+    display: block;
+}
+
+.navbar .search-box {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar .search-box .bx-search {
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar .search-box .input-box {
+    height: 60px;
+    width: 300px;
+    background: #122faf;
+    top: 65px;
+    right: calc(100% - 40px);
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.navbar .showInput .search-box .input-box {
+    opacity: 1;
+    pointer-events: auto;
+    top: 65px;
+}
+
+.navbar .search-box .input-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #122faf;
+    right: 10px;
+    top: 60px;
+    transform: rotate(45deg);
+}
+
+.navbar .search-box .input-box input {
+    position: absolute;
+    height: 35px;
+    width: 280px;
+    z-index: 98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav .hamburger {
+        display: block;
+    }
+    nav .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .nav-links.active {
+        left: 0;
+    }
+    nav .nav-links .links {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    nav .nav-links .links li {
+        width: 100%;
+    }
+    nav .nav-links .links li a {
+        line-height: 50px;
+    }
+    nav .nav-links .links .sub-menu,
+    nav .nav-links .links .more .more-sub-menu {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        display: none;
+    }
+    nav .nav-links .links li:hover .sub-menu,
+    nav .nav-links .links .more:hover .more-sub-menu {
+        display: none;
+    }
+    nav .nav-links .links .sub-menu li a {
+        line-height: 50px;
+    }
+    nav .nav-links .links .sub-menu.active,
+    nav .nav-links .links .more .more-sub-menu.active {
+        display: block;
+    }
+}
